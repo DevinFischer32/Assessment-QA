@@ -16,17 +16,24 @@
         display: flex;
         justify-content: center;
         padding: 10px;
+
     }
     img{
         width: 250px;
-        height: 275px;
-        margin-left: -350px;        
+        height: 275px;       
+        margin-left: -350px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
     }
     #start-game{
         margin: 0px 0px 0px 25px;
         width: 75px;
         border-color: whitesmoke;
-        background-color: rgb(168, 11, 11);
+        background-color: #f11c28;
         color: whitesmoke;
         border-radius: 30%;
     }
@@ -46,17 +53,17 @@
     }
 
     #game-board {
-        border: dashed 4px #d8b38a;
+        border: solid 7px #b39051;
         margin-bottom: 2em;
     }
 
     #game-board td {
-        border: solid 2px #d8b38a;
+        border: solid 2px #000000;
         height: 150px;
         width: 150px;
         text-align: center;
         font-size: 90px;
-        color: darkred;
+        color: #f11c28;
         margin-right: -100px;
     }
     #game-board{
@@ -78,8 +85,10 @@
     </h1>
     
     
-<div id="tableDiv">
-    <img src="https://drive.google.com/uc?export=download&id=1uOK910LpEuMZaC6UZoysv-sGgpoDkO9A"/>
+<section id="tableDiv">
+    <div>
+        <img id="boat" src="https://drive.google.com/uc?export=download&id=1uOK910LpEuMZaC6UZoysv-sGgpoDkO9A"/>
+    </div>
 <table id="game-board" cellpadding="0" cellspacing="0">
   <tr>
     <td id="cell-0"></td>
@@ -97,7 +106,8 @@
     <td id="cell-8"></td>
   </tr>
 </table>
-</div>
+
+</section>
 
 <script>
   /* Tic-Tac Javascript */
